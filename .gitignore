@@ -172,6 +172,30 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+# Sensitive / never commit
+.env
+*.pem
+*.key
+credentials.txt
+config.local.*
+
+# Captured data that could contain real network/device info
+*.pcap
+*.pcapng
+
+# VM and lab artifacts (large, not useful in git history)
+*.vdi
+*.ova
+*.vmdk
+snapshots/
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Editor clutter
+.vscode/
+
 # Pyre type checker
 .pyre/
 
